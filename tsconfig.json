@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    /* Base Options */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "verbatimModuleSyntax": false,
+    "allowJs": true,
+    "resolveJsonModule": false,
+    "rootDir": "src",
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "importHelpers": true,
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    /* If NOT using TSC for transpiling */
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "noEmit": true,
+    /* If running in DOM */
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    /* If building library */
+    "declaration": true,
+    /* If building library in monorepo */
+    "declarationMap": true,
+    "sourceMap": true,
+  },
+  "include": [
+    ".eslintrc.cjs",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.js",
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+    "src/tests/**/*"
+  ]
+}
